@@ -1,0 +1,61 @@
+nav ul {
+    list-style: none;
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 20px;
+}
+.invitados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+.invitado img {
+    width: 100%; /* Ajusta la imagen para que tome el ancho completo del contenedor */
+    height: 200px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Asegura que la imagen se ajuste al contenedor sin deformarse */
+    border-radius: 8px; /* Opcional: añade bordes redondeados a las imágenes */
+    margin-bottom: 10px; /* Espacio entre la imagen y el texto debajo */
+}
+
+.invitado {
+    flex: 0 0 30%; /* Asegura que cada invitado tome alrededor del 30% del espacio, dando espacio para tres por fila */
+    margin: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column; /* Alinea los elementos internos en una columna */
+}
+
+.invitado h2, .invitado p {
+    color: #333; /* Color uniforme para los textos */
+}
+
+.invitado p {
+    font-size: 16px; /* Tamaño de fuente uniforme */
+    color: #666; /* Color más suave para los párrafos */
+}
+
+.invitados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
