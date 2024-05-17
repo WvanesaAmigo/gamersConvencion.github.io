@@ -41,6 +41,14 @@ nav ul li a {
     background-color: rgb(61, 90, 152);
     text-align: center;
 }
+.why-attend h2{
+    color: white;
+    font-size: 80px;
+}
+.why-attend p{
+    color: white;
+    font-size: 30px;
+}
 
 .hero {
     background-image: url('../imagenes/fondocontrol.webp');
@@ -67,7 +75,172 @@ nav ul li a {
     z-index: 1;
 }
 
+.tematicas {
+    display: grid;
+    padding: 20px;
+}
 
+.tematica {
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+}
+.tematicas h1{
+    text-align: center;
+    font-size: 80px;
+}
+.tematica img {
+    width: 50%;
+    height: auto;
+}
+
+
+.tematica h2 {
+    margin: 10px 0;
+}
+
+.invitados {
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 20px;
+    background-color: rgb(3, 20, 46);
+}
+
+.invitado {
+    margin: 10px;
+    padding: 15px;
+    background-color: rgb(3, 20, 46);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+
+}
+.invitados h1{
+    text-align: center;
+    display: inline;
+    color: white;
+}
+#tituloinvi {
+    text-align: center; 
+    background-color: rgb(3, 20, 46); 
+    color: white; 
+    padding: 10px 0; 
+    margin: 0 auto; 
+    width: 100%;
+    font-size: 80px;
+}
+
+.invitado img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.programas{
+    background-color:rgb(3, 20, 46) ;
+    padding: 0%;
+    margin: 0 auto;
+}
+.programas p{
+    background-color: rgb(3, 20, 46);
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+}
+
+.programas h1{
+    text-align: center;
+    color: white;
+    font-size:60px;
+}
+
+.invitado h2,
+.invitado p {
+    color: white;
+}
+
+.invitado p {
+    color: white;
+}
+.programacion {
+    background-color: #ffffff;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgb(61, 90, 152);
+    border-radius: 8px;
+}
+
+.programacion h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table,
+th,
+td {
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: rgb(61, 90, 152);
+    color: white;
+    padding: 70px 0;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info p,
+.social-media p {
+    margin: 5px 0;
+}
+
+.social-media a {
+    margin-right: 10px;
+}
+
+.social-media img,
+.contact-info img {
+    width: 24px;
+    vertical-align: middle;
+
+}
 
 @media (max-width: 768px) {
     .hero {
@@ -92,7 +265,16 @@ nav ul li a {
         font-size: 18px;
     }
 }
+@media (max-width: 768px) {
+    .invitados {
+        flex-direction: column;
+        align-items: stretch;
+    }
 
+    .invitado {
+        max-width: 100%;
+    }
+}
 
 @media (max-width: 480px) {
     .hero {
@@ -113,5 +295,12 @@ nav ul li a {
 
     .why-attend {
         padding: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;
+        
     }
 }
