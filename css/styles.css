@@ -43,7 +43,7 @@ nav ul li a {
 }
 
 .hero {
-    background-image: url('/imagenes/fondocontrol.webp');
+    background-image: url('../imagenes/fondocontrol.webp');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat;
