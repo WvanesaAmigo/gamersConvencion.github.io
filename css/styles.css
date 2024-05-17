@@ -1,16 +1,16 @@
 body, html {
-    margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
 }
 
 nav ul {
     list-style: none;
-    background-color: #1a1a1a;
+    background-color: rgb(61, 90, 152);
     text-align: center;
     padding: 10px 0;
     margin: 0;
+    border: seashell solid 1px;
 }
+
 
 nav ul li {
     display: inline;
@@ -27,7 +27,7 @@ nav ul li a {
     color: white;
     text-align: center;
     padding: 50px 20px;
-    background-image: url('controller-background.jpg');
+    background-image: url('fondocontrol.webp');
     background-size: cover;
 }
 
@@ -38,18 +38,18 @@ nav ul li a {
 
 .why-attend {
     padding: 20px;
-    background-color: #f8f8f8;
+    background-color: rgb(61, 90, 152);
     text-align: center;
 }
 
 .hero {
-    background-image: url('/imagenes/mando.jpg'); /* Ruta a la imagen de fondo */
-    background-size: cover; /* Cubre completamente el área sin distorsionarse */
-    background-position: center; /* Centra la imagen en el div */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: white; /* Asegura que el texto sea legible sobre el fondo oscuro */
+    background-image: url('/imagenes/fondocontrol.webp');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: white;
     text-align: center;
-    padding: 50px 20px; /* Ajusta el padding según sea necesario */
+    padding: 50px 20px;
 }
 .hero {
     position: relative;
@@ -59,11 +59,60 @@ nav ul li a {
     content: "";
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: rgba(0, 0, 0, 0.5); /* Capa semitransparente negra para mejorar contraste */
+    background: rgba(0, 0, 0, 0.5);
     z-index: 0;
 }
 
 .hero h1, .hero p {
     position: relative;
-    z-index: 1; /* Asegura que el texto aparezca sobre la capa semitransparente */
+    z-index: 1;
+}
+
+
+
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 10px;
+    }
+
+    nav ul li {
+        display: block; 
+        text-align: center;
+    }
+
+    nav ul li a {
+        padding: 10px 5px;
+        display: block; 
+    }
+
+    .organizadores img {
+        height: 40px; 
+    }
+
+    .hero h1, .hero p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 20px 5px;
+    }
+
+    nav ul li a {
+        padding: 8px 5px;
+    }
+
+    .organizadores img {
+        height: 30px; 
+    }
+
+    .hero h1, .hero p {
+        font-size: 16px;
+    }
+
+    .why-attend {
+        padding: 10px;
+    }
 }
