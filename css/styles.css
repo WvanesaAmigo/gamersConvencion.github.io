@@ -27,7 +27,7 @@ nav ul li a {
     color: white;
     text-align: center;
     padding: 50px 20px;
-    background-image: url('fondocontrol.webp');
+    background-image: url('../imagenes/fondocontrol.webp');
     background-size: cover;
 }
 
